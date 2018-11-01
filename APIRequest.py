@@ -45,4 +45,4 @@ movie_list = movie_search(userSearch)
 
 print 'Name: %s\t Release Date: %s\t Plot: %s' %(movie_list['Title'], movie_list['Year'], movie_list['Plot'])
     
-
+close = raw_input("Please hit enter to close this program")
