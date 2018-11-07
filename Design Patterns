@@ -1,0 +1,25 @@
+-Design Patterns are general solutions to common problems that occur within software development.
+
+-They don't provide exact solutions, they are more of a general guide to how certain issues can be overcome.
+
+-They are guidelines for flexible and resilient code. 
+
+-They are documented solutions to well known software issues, packaged up into 'Design Patterns'
+
+-By learning them you can apply them to software designs.
+
+-It is not a library, module or package. It is a guideline for how to structure software design and code
+in order to solve a problem.
+
+-You understand a pattern, and use and adapt that understanding to help design your software.
+
+-Can be used as Developer vocab. Instead of saying make your code do x, then y, then z,
+you could just say: Implement 'X' pattern. It makes for an efficient way to communicate design and avoid miscommunications.
+
+-They are built from years of experience of software devs. You're reusing experience.
+
+-Divided into the categories: creational, structural and behavioural, and described with the concepts of delegation, aggregation, and consultation.
+
+-i.e. I want objects within my code to be less dependant on one another. Not i.e. My movie software needs a way to parse JSON data.
+
+-There are 23 original design patterns.
