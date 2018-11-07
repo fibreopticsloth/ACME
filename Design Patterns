@@ -23,3 +23,12 @@ you could just say: Implement 'X' pattern. It makes for an efficient way to comm
 -i.e. I want objects within my code to be less dependant on one another. Not i.e. My movie software needs a way to parse JSON data.
 
 -There are 23 original design patterns.
+
+The selected patterns are:
+State, Command, Iterator and Memento.
+Not all of these will necessarily be implemented, but at least one will.
+This will be decided a bit further down the line. 
+https://refactoring.guru/design-patterns/state
+https://refactoring.guru/design-patterns/command
+https://refactoring.guru/design-patterns/iterator
+https://refactoring.guru/design-patterns/memento
