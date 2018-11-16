@@ -76,21 +76,37 @@ public class ACME {
 		btnNewButton.addMouseListener(new MouseAdapter() {
 			@Override
 			public void mouseClicked(MouseEvent arg0) {
-				HttpResponse<JsonNode> response = null;
-				try {
-					response = 
-							Unirest.get("http://www.omdbapi.com/?apikey=9d6240b0&t="+textField.getText().replaceAll(" ", "+")).
-					        header("accept",  "application/json").
-					        queryString("order","desc").
-					        queryString("sort", "creation").
-					        queryString("filter", "default").
-					        queryString("site", "stackoverflow").
-					        asJson();
-				} catch (UnirestException e) {
-					// TODO Auto-generated catch block
-					e.printStackTrace();
+				
+				if (rdbtnNewRadioButton_1.isSelected()){
+					
+					HttpResponse<JsonNode> response = null;
+			
+						try {
+							response = 
+									Unirest.get("http://www.omdbapi.com/?apikey=9d6240b0&t="+textField.getText().replaceAll(" ", "+")).asJson();
+						} catch (UnirestException e) {
+							// TODO Auto-generated catch block
+							e.printStackTrace();
+						}
+			
+					System.out.println(response.getBody().getObject().toString(2));
+					
 				}
-				    System.out.println(response.getBody().getObject().toString(2));
+				
+				else if (rdbtnNewRadioButton.isSelected()) {
+					
+					HttpResponse<JsonNode> response = null;
+					try {
+						response = 
+								Unirest.get("https://api.themoviedb.org/3/search/movie?api_key=6495d23587949a47871fb82a6f4aa9cb&query="+textField.getText().replaceAll(" ", "%20")).asJson();
+					} catch (UnirestException e) {
+						// TODO Auto-generated catch block
+						e.printStackTrace();
+					}
+					System.out.println(response.getBody().getObject().toString(2));
+					
+				}
+				
 				
 			}
 			
